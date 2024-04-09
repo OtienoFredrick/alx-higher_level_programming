@@ -4,4 +4,4 @@ for i in n:
     if i == 'e' or i == 'q':
         continue
     else:
-        print("{}".format(i), end = "")
+        print("{}".format(i), end="")
