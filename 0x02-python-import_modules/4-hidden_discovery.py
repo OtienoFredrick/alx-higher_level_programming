@@ -2,6 +2,6 @@
 if __name__ == "__main__":
     import hidden_4
     names = dir(hidden_4)
-    for i in name:
-        if name[:2] != "__":
-            print(name)
+    for i in names:
+        if names[:2] != "__":
+            print(names)
