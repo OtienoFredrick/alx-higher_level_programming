@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""Takes in a url and an email adress sends 
-a Post request to the passed url"""
+"""Sends a POST request to a given URL with a given email.
+Usage: ./6-post_email.py <URL> <email>
+  - Displays the body of the response.
+"""
 import sys
 import requests
 
