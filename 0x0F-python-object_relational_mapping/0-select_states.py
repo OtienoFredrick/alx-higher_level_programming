@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The script lists all states from the
+This script lists all states from the
 database `hbtn_0e_0_usa`.
 """
 
@@ -9,21 +9,17 @@ from sys import argv
 
 if __name__ == '__main__':
     """
-    Access the database
+    Access to the database and get the states
+    from the database.
     """
-    db = MySQLdb.connect(
-            host="localhost",
-            user=argv[1],
-            port=3306,
-            passwd=argv[2],
-            db=argv[3]
-            )
-    #create a cursor object to interact with the database
-    cursor = db.cursor()
+    db_connect = MySQLdb.connect(
+        host="localhost", user=argv[1], port=3306, passwd=argv[2], db=argv[3])
 
-    cursor.execute("SELECT * FROM states")
+    db_cursor = db_connect.cursor()
 
-    rows_selected = cursor.fetchall()
+    db_cursor.execute("SELECT * FROM states")
+
+    rows_selected = db_cursor.fetchall()
 
     for row in rows_selected:
         print(row)
