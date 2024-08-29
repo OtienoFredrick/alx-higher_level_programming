@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 /**
  * Represents a rectangle with two arguments w
  * and h
