@@ -1,6 +1,6 @@
 #!/usr/bin/node
 /**
- *
+ * Check the parameters provided
  */
 class Rectangle {
   constructor (w, h) {
@@ -9,16 +9,16 @@ class Rectangle {
       this.height = h;
     }
   }
-  
+
   print () {
     for (let i = 0; i < this.height; i++) {
       let myVar = '';
       let y = 0;
       while (y < this.width) {
-	myVar += 'X';
-	y++
+        myVar += 'X';
+        y++;
       }
-      
+
       console.log(myVar);
     }
   }
@@ -29,7 +29,7 @@ class Rectangle {
     this.width = this.height;
     this.height = temp;
   }
-  
+
   double () {
     this.width *= 2;
     this.height *= 2;
