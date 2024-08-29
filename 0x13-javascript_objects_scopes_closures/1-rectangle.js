@@ -1,8 +1,8 @@
 #!/usr/bin/node
 /**
- * Represents a rectangle with two arguments width and height
+ * Represents a rectangle class with width and height attributes
  */
-class Rectangle { 
+class Rectangle {
   constructor (w, h) {
     this.width = w;
     this.height = h;
