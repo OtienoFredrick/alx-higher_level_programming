@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""class BaseGeometry with a public instance method"""
+"""Defines a base geometry class BaseGeometry"""
 
 
 class BaseGeometry:
+    """this class represents a base geometry"""
+
     def area(self):
-        raise Exception("area() is not implimented")
+        """method not implemented yet"""
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """validates a value as an integer
